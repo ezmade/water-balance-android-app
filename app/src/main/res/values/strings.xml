@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Water Balance</string>
+    <string name="description_logo">Water Balance</string>
+    <string name="description_remove_water">Уменьньшить количество воды</string>
+    <string name="description_add_water">Добавить количество воды</string>
+    <string name="welcome_string">Сегодня выпито воды</string>
+</resources>
