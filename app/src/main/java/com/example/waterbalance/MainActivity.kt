@@ -60,9 +60,14 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun addWaterCount(view: View) {
-        progr += value
-        if (progr > 2500) {
-            Toast.makeText(this, "Не рекомендуется пить слишком много воды", Toast.LENGTH_SHORT).show()
+        if (progr >= 5000) {
+            Toast.makeText(this, "Достигнут лимит!", Toast.LENGTH_SHORT).show()
+        }
+        else {
+            progr += value
+            if (progr > 2500) {
+                Toast.makeText(this, "Не рекомендуется пить слишком много воды", Toast.LENGTH_SHORT).show()
+            }
         }
         updateProgress()
     }
